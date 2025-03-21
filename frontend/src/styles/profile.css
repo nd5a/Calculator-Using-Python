@@ -1,0 +1,40 @@
+.profile-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .profile-card {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-card h2 {
+    color: #333;
+  }
+  
+  .bookings-section {
+    padding: 20px;
+    background: #eef1f3;
+    border-radius: 10px;
+  }
+  
+  .booking-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .booking-item {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

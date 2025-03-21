@@ -1,0 +1,218 @@
+:root {
+   --primary-color     : #ff7e01;
+   --secondary-color   : #faa935;
+   --heading-color     : #0b2727;
+   --text-color        : #6e7074;
+   --font-name         : "Montserrat", sans-serif;
+   --subtitle-font-name: "Island Moments", cursive;
+}
+
+.header {
+   width      : 100%;
+   height     : 80px;
+   line-height: 80px;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+ }
+
+ .logo img {
+  max-height: 50px; /* Adjust the height as needed */
+  width: auto;
+}
+ 
+ .logo-text {
+   font-size: 2.5rem;
+   font-weight: bold;
+   color: #333;
+   margin-left: 10px;
+   font-style:oblique;
+ }
+ 
+ .user-avatar {
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 2px solid #ccc;
+}
+.user-info {
+   display: flex;
+   align-items: center;
+   font-weight: bold;
+   color: #f8f2f2;
+}
+
+
+/* User Avatar Styling */
+.user-avatar {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   border: 2px solid white;
+   cursor: pointer;
+}
+
+
+.menu {
+   margin-bottom: 0;
+}
+
+.nav__item a {
+   text-decoration: none;
+   color          : var(--heading-color);
+   font-weight    : 500;
+   font-size      : 1.5rem;
+}
+
+.nav__item a:hover {
+   color: inherit;
+}
+
+.nav__item a.active__link {
+   color: var(--secondary-color);
+}
+
+/* Sidebar Styles */
+.sidebar {
+   position: fixed;
+   top: 0;
+   right: -250px; /* Initially hidden off-screen on the right */
+   width: 250px;
+   height: 100vh;
+   background: rgba(255, 255, 255, 0);
+   color: rgb(15, 15, 15);
+   transition: right 0.3s ease-in-out;
+   box-shadow: -2px 0 5px rgba(0, 0, 0, 0);
+   z-index: 999;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding-top: 50px;
+   backdrop-filter: blur(10px); /* Adds a blur effect for better visibility */
+}
+
+/* When sidebar is open, slide it in from the right */
+.sidebar.open {
+   right: 0;
+   background: rgba(255, 255, 255, 0.2);
+   backdrop-filter: blur(10px);
+}
+
+/* Close Button */
+.close-btn {
+   color: rgb(14, 13, 13);
+   text-decoration: none;
+   font-size: 18px;
+   display: block;
+   width: 100%;
+   background: rgba(255, 255, 255, 0);
+   border: none;
+   text-align: center;
+   cursor: pointer;
+}
+
+/* Sidebar Links */
+.sidebar ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   text-align: center;
+}
+
+.sidebar ul li {
+   padding: 0px;
+
+}
+
+.sidebar ul li a,
+.sidebar ul li button {
+   color: rgb(14, 13, 13);
+   text-decoration: none;
+   font-size: 18px;
+   display: block;
+   width: 100%;
+   background: transparent; /* Transparent background */
+   border: none;
+   text-align: center;
+   cursor: pointer;
+   padding: 0px 0; /* Reduce height */
+}
+
+.sidebar ul li button:hover,
+.sidebar ul li a:hover {
+   background: rgba(238, 166, 10, 0.808);
+}
+
+
+
+.mobile__menu {
+   font-size: 1.3rem;
+   color    : var(--heading-color);
+   display  : none;
+}
+
+.sticky__header {
+   width      : 100%;
+   height     : 80px;
+   line-height: 80px;
+   background : #fff;
+   position   : sticky;
+   top        : 0;
+   left       : 0;
+   box-shadow : 3px 3px 8px -3px #ddd;
+   z-index    : 999;
+}
+
+/* =============== RESPONSIVE ================ */
+@media only screen and (max-width:992px) {
+   .logo img {
+      width: 20%;
+   }
+
+   .navigation {
+      width     : 100%;
+      height    : 100%;
+      position  : fixed;
+      top       : 0;
+      left      : 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index   : 999;
+      display   : none;
+   }
+
+   .menu {
+      position       : absolute;
+      top            : 0;
+      right          : 0;
+      width          : calc(100% - 75%);
+      height         : 100%;
+      background     : #fff;
+      flex-direction : column;
+      line-height    : 0.5rem;
+      justify-content: center;
+      z-index        : 9999;
+   }
+
+   .show__menu {
+      display: block;
+   }
+
+   .mobile__menu {
+      display: block;
+   }
+}
+
+/* =============== RESPONSIVE ================ */
+@media only screen and (max-width: 768px) {
+   .logo img {
+      width: 45%;
+   }
+
+   .menu {
+      width: calc(100% - 50%);
+   }
+}

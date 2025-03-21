@@ -1,0 +1,17 @@
+.masonry__item {
+    position: relative;
+  }
+  
+  .masonry__img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .masonry__title {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  

@@ -1,0 +1,90 @@
+.payment__container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+ }
+ 
+ .payment-options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+ }
+ 
+ .payment-options button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ .payment-options button:hover {
+    background: #0056b3;
+ }
+ 
+ .upi-options h4, .card-payment h4 {
+    margin-bottom: 1rem;
+ }
+ 
+ .upi-apps {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+ }
+ 
+ .upi-apps img {
+    width: 80px;
+    cursor: pointer;
+    transition: transform 0.2s;
+ }
+ 
+ .upi-apps img:hover {
+    transform: scale(1.1);
+ }
+ 
+ .card-payment input {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+ }
+ 
+ .pin-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .pin-container input {
+    width: 100%;
+    padding-right: 40px;
+ }
+ 
+ .eye-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #555;
+    font-size: 18px;
+ }
+ 
+ .card-payment button {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+ }
+ 
+ .card-payment button:hover {
+    background: #218838;
+ }
+ 

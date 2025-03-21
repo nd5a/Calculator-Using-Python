@@ -1,0 +1,150 @@
+.itinerary-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+
+  }
+  
+  .itinerary-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+
+  }
+  
+  .section {
+    flex: 1;
+    min-width: 300px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .todo-section {
+    margin-top: 30px;
+    font-size: medium;
+  }
+  
+  .todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .todo-input input {
+    flex: 1;
+    padding: 8px;
+  }
+  
+  .todo-input button {
+    padding: 8px 15px;
+    background-color: #ec9d08;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .todo-list li.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .todo-list li button {
+    background:rgb(228, 140, 8);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+
+/* Blog Section */
+#blog {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.blog-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.blog-item {
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-item:hover {
+  transform: translateY(-5px);
+}
+
+.blog-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+
+.blog-item-bottom {
+  padding: 15px;
+}
+
+.blog-item-bottom span {
+  font-size: 14px;
+  color: #888;
+}
+
+.blog-item-bottom a {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  display: block;
+  font-family: 'Raleway', sans-serif; /* Change to any preferred font */
+  font-weight: bold; /* Ensures bold text */
+  color: inherit; /* Inherits the color from the parent element */
+  text-decoration: none; /* Removes underline */
+  line-height: 1.6;
+  transition: var(--trans);
+}
+
+.blog-item-bottom a:hover {
+  opacity: 0.8;
+}
+
+
+
+.blog-item-bottom .text {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}

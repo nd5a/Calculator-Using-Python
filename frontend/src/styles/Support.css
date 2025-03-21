@@ -1,0 +1,52 @@
+.support-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h2, h3 {
+    text-align: center;
+  }
+  
+  .faq details {
+    margin-bottom: 10px;
+  }
+  
+  .faq summary {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .support-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .support-form input, .support-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .support-form button {
+    padding: 10px;
+    background: #d69406ec;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .support-form button:hover {
+    background: #43a143d3;
+  }
+  
+  .success {
+    color: green;
+    text-align: center;
+  }
+  
