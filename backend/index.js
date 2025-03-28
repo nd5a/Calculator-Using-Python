@@ -50,13 +50,27 @@ app.use("/api/v1/review", reviewRoute)
 app.use("/api/v1/booking", bookingRoute)
 app.use('/api/v1/support', supportRoutes); // Mount the support routes
 
-app.use(express.static(path.join(__dirname, '/frontend/build'))) 
-app.get('*', (req, res) => {
-   res.sendFile
-      (path.join(__dirname, 'frontend', 'build', 'index.html'))
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'frontend', 'build')));
+
+// Ensure MIME types are correctly set
+app.get('*.css', (req, res, next) => {
+  res.type('text/css');
+  next();
 });
 
-app.listen(port, () => {
-   connect()
-   console.log('server listening on port', port)
-})
+app.get('*.js', (req, res, next) => {
+  res.type('application/javascript');
+  next();
+});
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/frontend/build/index.html'));
+});
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
