@@ -53,7 +53,7 @@ app.use('/api/v1/support', supportRoutes); // Mount the support routes
 app.use(express.static(path.join(__dirname, '/frontend/build'))) 
 app.get('*', (req, res) => {
    res.sendFile
-      (path.join(__dirname, 'frontend', 'dist', 'index.html'))
+      (path.join(__dirname, 'frontend', 'build', 'index.html'))
 });
 
 app.listen(port, () => {
